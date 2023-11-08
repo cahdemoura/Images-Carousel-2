@@ -37,21 +37,21 @@
     transition: .5s;
 }
 
-.tabs input:nth-of-type(1):checked ~.botoes label:nth-of-type(1),
-.tabs input:nth-of-type(2):checked ~.botoes label:nth-of-type(2),
-.tabs input:nth-of-type(3):checked ~.botoes label:nth-of-type(3) {
+.tabs input:nth-of-type(1):checked~.botoes label:nth-of-type(1),
+.tabs input:nth-of-type(2):checked~.botoes label:nth-of-type(2),
+.tabs input:nth-of-type(3):checked~.botoes label:nth-of-type(3) {
     opacity: 1;
     width: 50px;
 }
 
-.conteudo{
+.conteudo {
     position: relative;
     width: 300vw;
     display: flex;
     transition: .5s;
 }
 
-.conteudo .caixa{
+.conteudo .caixa {
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -64,26 +64,53 @@
     padding: 40px;
 }
 
-.conteudo .caixa:nth-of-type(1){
-    background: linear-gradient(50deg,#43cea2,#185a9d);
+.conteudo .caixa:nth-of-type(1) {
+    background: linear-gradient(50deg, #43cea2, #185a9d);
 }
 
-.conteudo .caixa:nth-of-type(2){
-    background: linear-gradient(50deg,#ff4e50,#f9d423);
+.conteudo .caixa:nth-of-type(2) {
+    background: linear-gradient(50deg, #ff4e50, #f9d423);
 }
 
-.conteudo .caixa:nth-of-type(3){
-    background: linear-gradient(50deg,#ce43ab,#185a9d);
+.conteudo .caixa:nth-of-type(3) {
+    background: linear-gradient(50deg, #ce43ab, #185a9d);
 }
 
-.tabs input:nth-of-type(1):checked ~ .conteudo{
+.tabs input:nth-of-type(1):checked~.conteudo {
     left: 0;
 }
 
-.tabs input:nth-of-type(2):checked ~ .conteudo{
+.tabs input:nth-of-type(2):checked~.conteudo {
     left: -100vw;
 }
 
-.tabs input:nth-of-type(3):checked ~ .conteudo{
+.tabs input:nth-of-type(3):checked~.conteudo {
     left: -200vw;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 8px;
+    background: rgba(35, 184, 243, 0.219);
+    width: 320px;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.card ul li {
+    list-style: square;
+    padding: 8px 0;
+}
+
+.mainTitle {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 50;
+    margin-top: 64px;
 }
