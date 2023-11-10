@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .container {
@@ -91,19 +92,37 @@
 .card {
     border: 2px solid black;
     border-radius: 8px;
-    background: rgba(35, 184, 243, 0.219);
-    width: 320px;
+    background: rgba(255, 255, 255, 0.349);
+    width: 328px;
     height: 512px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 32px;
+    padding:16px 32px ;
+
 }
 
 .card ul li {
     list-style: square;
     padding: 8px 0;
+    font-weight: 600;
+}
+
+.card h1{
+    padding: 8px 0;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.card h3{
+    font-size: 36px;
+    text-align: center;
+}
+
+.card h1 .spacing{
+    letter-spacing: 2px;
 }
 
 .mainTitle {
